@@ -1,0 +1,20 @@
+{
+  "project": "findjob-vue-mvp",
+  "phase": "0-mvp",
+  "steps": [
+    { "step": 0, "name": "project-setup", "status": "pending" },
+    { "step": 1, "name": "mock-data", "status": "pending" },
+    { "step": 2, "name": "styles-utils", "status": "pending" },
+    { "step": 3, "name": "api-layer", "status": "pending" },
+    { "step": 4, "name": "stores", "status": "pending" },
+    { "step": 5, "name": "composables", "status": "pending" },
+    { "step": 6, "name": "base-form", "status": "pending" },
+    { "step": 7, "name": "base-tabs-modal", "status": "pending" },
+    { "step": 8, "name": "job-components", "status": "pending" },
+    { "step": 9, "name": "router-app", "status": "pending" },
+    { "step": 10, "name": "list-view", "status": "pending" },
+    { "step": 11, "name": "detail-apply", "status": "pending" },
+    { "step": 12, "name": "login-scrap", "status": "pending" },
+    { "step": 13, "name": "docs", "status": "pending" }
+  ]
+}
