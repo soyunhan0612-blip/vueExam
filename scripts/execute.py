@@ -420,6 +420,11 @@ class StepExecutor:
 
 
 def main():
+    # Windows 콘솔 기본 인코딩(cp949)은 '—' 같은 문자를 출력하지 못해 커밋 도중 죽는다
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(description="Harness Step Executor")
     parser.add_argument("phase_dir", help="Phase directory name (e.g. 0-mvp)")
     parser.add_argument("--push", action="store_true", help="Push branch after completion")
