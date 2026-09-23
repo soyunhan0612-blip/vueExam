@@ -29,7 +29,10 @@
     {
       "step": 3,
       "name": "api-layer",
-      "status": "pending"
+      "status": "completed",
+      "summary": "src/api/http.js·jobs.js·auth.js를 생성해 fetchJobs({ q, region }, { signal }), fetchJobsByIds(ids, { signal }), fetchJob(id, { signal }), createApplication(payload), login(email, password)를 export하고, paramsSerializer indexes: null로 배열 ID를 직렬화하며 취소 오류는 원본 reject·그 외 오류는 한국어 Error로 정규화해 error.status에 HTTP 상태를 보존했다.",
+      "started_at": "2026-09-23T19:21:21+0900",
+      "completed_at": "2026-09-23T19:25:04+0900"
     },
     {
       "step": 4,
