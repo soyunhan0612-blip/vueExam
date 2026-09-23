@@ -45,7 +45,10 @@
     {
       "step": 5,
       "name": "composables",
-      "status": "pending"
+      "status": "completed",
+      "summary": "useJobs() → { jobs, loading, error, load }, useJob() → { job, loading, error, load }, useApply() → { submitting, error, done, submit, reset }, useMediaQuery(query) → Ref<boolean>, useFocusTrap(containerRef) → { activate, deactivate }를 구현하고 AbortController와 요청 순번 비교로 마지막 조회 응답만 반영했다.",
+      "started_at": "2026-09-23T19:29:34+0900",
+      "completed_at": "2026-09-23T19:35:01+0900"
     },
     {
       "step": 6,
