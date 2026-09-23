@@ -77,7 +77,10 @@
     {
       "step": 9,
       "name": "router-app",
-      "status": "pending"
+      "status": "completed",
+      "summary": "routes를 /(redirect), jobs(/jobs, 정적 import, title), job-detail(/jobs/:id, 숫자 props), login(/login), scraps(/scraps, requiresAuth), catch-all로 구성하고 인증 가드와 저장 위치 복원·동일 route 쿼리 스크롤 유지·그 외 top 복귀 규칙을 적용했으며, AppHeader·스킵 링크·JobListView 전용 KeepAlive를 App.vue에 연결하고 4개 view 자리표시자를 생성했다.",
+      "started_at": "2026-09-23T19:58:32+0900",
+      "completed_at": "2026-09-23T20:02:51+0900"
     },
     {
       "step": 10,
