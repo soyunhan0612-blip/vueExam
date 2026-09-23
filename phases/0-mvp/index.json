@@ -69,7 +69,10 @@
     {
       "step": 8,
       "name": "job-components",
-      "status": "pending"
+      "status": "completed",
+      "summary": "JobCard(props: job/scrapped, emits: toggle-scrap), JobFilter(v-model:keyword/v-model:region), AppHeader(auth·scrap stores)를 구현하고 route 이름 jobs, job-detail, login, scraps에 맞춰 연결했다.",
+      "started_at": "2026-09-23T19:47:13+0900",
+      "completed_at": "2026-09-23T19:58:30+0900"
     },
     {
       "step": 9,
