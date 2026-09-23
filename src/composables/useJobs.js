@@ -108,7 +108,9 @@ export function useJob() {
       if (isCanceledRequest(err)) return
 
       if (currentRequest === requestCount) {
-        error.value = getErrorMessage(err)
+        error.value = err instanceof Error
+          ? err
+          : new Error(getErrorMessage(err))
       }
     } finally {
       if (currentRequest === requestCount && !currentController.signal.aborted) {
