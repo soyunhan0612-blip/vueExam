@@ -1,4 +1,4 @@
-/*
+/**
  * [개념]
  * Vue Router 4의 전역 가드는 이동 대상이나 false를 return해 흐름을 제어한다.
  * scrollBehavior는 뒤로 가기 위치 복원과 화면 전환 시 스크롤 위치를 관리하고,

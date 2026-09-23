@@ -1,4 +1,4 @@
-/*
+/**
  * [개념]
  * Pinia Setup 스토어는 reactive/ref를 state, computed를 getters, 함수를 actions처럼 반환한다.
  * Vue 3의 Proxy 반응성은 객체에 새 키를 직접 추가하거나 delete로 제거하는 변경도 추적한다.

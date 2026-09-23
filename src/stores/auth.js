@@ -1,4 +1,4 @@
-/*
+/**
  * [개념]
  * Pinia Options 스토어는 state, getters, actions로 상태와 파생 값, 비동기 동작을 한곳에 모은다.
  * actions 안에서는 this로 state와 다른 action에 접근하며, mutations 없이 상태를 직접 변경할 수 있다.
