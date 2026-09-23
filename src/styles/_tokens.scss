@@ -1,1 +1,11 @@
-// 빌드타임 디자인 토큰을 정의하는 파일이다. 실제 토큰은 Step 2에서 추가한다.
+$bp-md: 768px;
+$bp-lg: 1024px;
+
+$radius-sm: 4px;
+$radius-md: 8px;
+
+$z-header: 100;
+$z-apply-bar: 200;
+$z-modal: 1000;
+
+$content-max-width: 1120px;
