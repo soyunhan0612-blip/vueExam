@@ -109,7 +109,10 @@
     {
       "step": 13,
       "name": "docs",
-      "status": "pending"
+      "status": "completed",
+      "summary": "README.md와 VUE2-VS-VUE3.md를 생성하고 src/main.js, vite.config.js, src/router/index.js, src/stores/auth.js·scrap.js, src/api/http.js, src/composables/useJobs.js·useMediaQuery.js·useFocusTrap.js, src/utils/format.js의 상단 주석을 /** 형식으로 보강했으며 node scripts/verify.mjs --strict가 통과했다.",
+      "started_at": "2026-09-23T20:27:10+0900",
+      "completed_at": "2026-09-23T20:35:19+0900"
     }
   ],
   "created_at": "2026-09-23T18:38:55+0900"
