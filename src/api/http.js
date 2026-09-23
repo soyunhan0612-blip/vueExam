@@ -6,10 +6,12 @@
  * [Vue 2였다면]
  * import store from '@/store'
  * const token = store.state.auth.token
- * Vuex 상태를 인터셉터에서 직접 읽을 수 있지만, store가 API 모듈을 import하면
- * HTTP 모듈과 store 사이에 순환 참조가 생길 수 있어 의존성 방향을 주의해야 한다.
+ * Vuex는 보통 단일 store 인스턴스의 state를 직접 읽는다. Pinia는 useAuthStore()로 현재 앱에
+ * 설치된 Pinia의 스토어를 얻으며, 순환 import 초기화 문제를 피하려고 요청 함수 안에서 호출한다.
  */
 import axios from 'axios'
+
+import { useAuthStore } from '@/stores/auth.js'
 
 const http = axios.create({
   baseURL: '/api',
@@ -19,7 +21,15 @@ const http = axios.create({
   },
 })
 
-http.interceptors.request.use((config) => config)
+http.interceptors.request.use((config) => {
+  const authStore = useAuthStore()
+
+  if (authStore.token) {
+    config.headers.Authorization = `Bearer ${authStore.token}`
+  }
+
+  return config
+})
 
 http.interceptors.response.use(
   (response) => response,
