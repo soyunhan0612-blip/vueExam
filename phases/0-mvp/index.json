@@ -21,7 +21,10 @@
     {
       "step": 2,
       "name": "styles-utils",
-      "status": "pending"
+      "status": "completed",
+      "summary": "src/styles/_tokens.scss·_mixins.scss·base.scss와 src/utils/constants.js·format.js·debounce.js를 생성하고 main.js에 전역 스타일을 연결했으며, mixin(mq, focus-ring, sr-only, tap-target, reduced-motion), CSS 변수(--color-bg, --color-text, --color-text-muted, --color-line, --color-action, --color-action-hover, --color-highlight, --color-error, --color-focus, --space-1~--space-8), constants export(CATEGORIES, REGIONS, getCategoryLabel, STORAGE_KEYS), format export(formatWage, formatDate, formatPhone)를 구현했다.",
+      "started_at": "2026-09-23T19:10:13+0900",
+      "completed_at": "2026-09-23T19:21:19+0900"
     },
     {
       "step": 3,
