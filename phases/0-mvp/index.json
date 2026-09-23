@@ -13,7 +13,10 @@
     {
       "step": 1,
       "name": "mock-data",
-      "status": "pending"
+      "status": "completed",
+      "summary": "mock/db.json에 업직종 6개(food, retail, service, production, delivery, office), 지역 8개(강남구, 마포구, 송파구, 영등포구, 관악구, 종로구, 성동구, 노원구), 급구 6건을 포함한 jobs 24건과 job 필드(id, title, company, category, region, wage, workDays, workHours, employmentType, urgent, description, postedAt), 테스트 사용자, 빈 applications를 구성했다.",
+      "started_at": "2026-09-23T19:03:31+0900",
+      "completed_at": "2026-09-23T19:10:10+0900"
     },
     {
       "step": 2,
