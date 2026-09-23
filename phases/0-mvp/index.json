@@ -85,7 +85,10 @@
     {
       "step": 10,
       "name": "list-view",
-      "status": "pending"
+      "status": "completed",
+      "summary": "q/region/category 쿼리를 쓰기 가능한 computed로 연결하고 jobs 화면 활성 상태에서 q·region이 마지막 조회값과 달라질 때만 조회하며, q·region 응답을 클라이언트 category별로 집계한 탭과 JobFilter·BaseTabs·JobCard·BaseButton 상태 UI를 구현했다.",
+      "started_at": "2026-09-23T20:02:53+0900",
+      "completed_at": "2026-09-23T20:11:01+0900"
     },
     {
       "step": 11,
