@@ -53,7 +53,10 @@
     {
       "step": 6,
       "name": "base-form",
-      "status": "pending"
+      "status": "completed",
+      "summary": "BaseButton(props: variant/type/block/loading, 기본 slot), BaseInput(model: String|Number, props: label/type/error/hint, expose: focus), BaseSelect(model: String, props: label/options/placeholder/error)를 접근성 연결과 44px·16px 폼 스타일로 구현했다.",
+      "started_at": "2026-09-23T19:35:02+0900",
+      "completed_at": "2026-09-23T19:40:26+0900"
     },
     {
       "step": 7,
