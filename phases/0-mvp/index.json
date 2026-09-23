@@ -61,7 +61,10 @@
     {
       "step": 7,
       "name": "base-tabs-modal",
-      "status": "pending"
+      "status": "completed",
+      "summary": "BaseTabs(model: selected, props: tabs/label, slots: tab({ tab, selected })/default({ selected }))와 BaseModal(v-model:open, props: title/returnFocusTo/closeOnBackdrop, slots: default/footer)를 구현하고, 모달은 명시한 returnFocusTo가 없으면 연 요소로 포커스를 복귀하도록 구성했다.",
+      "started_at": "2026-09-23T19:40:28+0900",
+      "completed_at": "2026-09-23T19:47:11+0900"
     },
     {
       "step": 8,
