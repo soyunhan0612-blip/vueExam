@@ -37,7 +37,10 @@
     {
       "step": 4,
       "name": "stores",
-      "status": "pending"
+      "status": "completed",
+      "summary": "Options auth 스토어의 user·token state, isLoggedIn·userName getters, login·logout actions와 Setup scrap 스토어의 ids·count·isScrapped·toggle·clear API를 구현해 findjob:auth·findjob:scraps에 안전하게 저장하고, http.js 요청 인터셉터의 지연 useAuthStore 호출·Bearer 헤더와 main.js의 Pinia 등록을 연결했다.",
+      "started_at": "2026-09-23T19:25:05+0900",
+      "completed_at": "2026-09-23T19:29:33+0900"
     },
     {
       "step": 5,
