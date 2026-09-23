@@ -104,9 +104,7 @@
 ```
 findjob-vue-mvp/
 ├─ mock/db.json
-├─ docs/
-│  ├─ prd.md
-│  └─ VUE2-VS-VUE3.md
+├─ docs/           PRD.md, ARCHITECTURE.md, ADR.md, UI_GUIDE.md (매 step 프롬프트에 주입되므로 짧게 유지)
 ├─ src/
 │  ├─ main.js · App.vue
 │  ├─ api/           http.js, jobs.js, auth.js
@@ -121,6 +119,7 @@ findjob-vue-mvp/
 │  │  └─ layout/     AppHeader
 │  └─ views/         JobListView, JobDetailView, LoginView, ScrapView
 ├─ vite.config.js · index.html · package.json
+├─ VUE2-VS-VUE3.md  # 개념별 Vue 2 ↔ Vue 3 비교 정리 (docs/ 밖에 둔다)
 └─ README.md
 ```
 
@@ -134,17 +133,7 @@ findjob-vue-mvp/
 
 ## 10. 진행 상태
 
-| 구분 | 항목 | 상태 |
-| --- | --- | --- |
-| 설정 | package.json, vite.config.js, index.html, mock/db.json | 완료 |
-| 기반 | styles, utils, main.js, api, stores, router, composables | 완료 |
-| 공통 UI | BaseButton, BaseInput, BaseSelect | 완료 |
-| 공통 UI | BaseTabs, BaseModal | 남음 |
-| 도메인 | JobCard, JobFilter, AppHeader | 남음 |
-| 화면 | JobListView, JobDetailView, LoginView, ScrapView, App.vue | 남음 |
-| 마무리 | 빌드 검증, VUE2-VS-VUE3.md, README.md, zip 전달 | 남음 |
-
-진행 순서: BaseTabs → BaseModal → JobCard → JobFilter → 목록 → 상세 → 로그인·스크랩 → App → 빌드 검증 → 문서 → 전달
+진행 상태는 `phases/`(Harness)가 관리한다. 구현 순서는 설정 → 목업 데이터 → 스타일·유틸 → api → stores → composables → 공통 UI → 도메인 컴포넌트 → 라우터·App → 화면 → 문서다.
 
 ## 11. 실행 방법
 
