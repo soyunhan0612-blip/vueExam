@@ -139,6 +139,9 @@ function retryLoad() {
 }
 
 async function handleSubmit() {
+  // 제출 버튼이 disabled가 아니므로 입력란 Enter로 인한 중복 제출을 여기서 막는다
+  if (submitting.value) return
+
   clearFormErrors()
   reset()
 

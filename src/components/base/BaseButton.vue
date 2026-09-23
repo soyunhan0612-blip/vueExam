@@ -22,6 +22,13 @@ const props = defineProps({
   block: Boolean,
   loading: Boolean,
 })
+
+// loading 중 네이티브 disabled를 걸면 포커스가 body로 빠지므로 aria-disabled + 클릭 차단으로 대신한다
+function blockWhileLoading(event) {
+  if (!props.loading) return
+  event.preventDefault()
+  event.stopImmediatePropagation()
+}
 </script>
 
 <template>
@@ -35,8 +42,9 @@ const props = defineProps({
         'is-loading': props.loading,
       },
     ]"
-    :disabled="props.loading"
+    :aria-disabled="props.loading ? 'true' : undefined"
     :aria-busy="props.loading ? 'true' : undefined"
+    @click.capture="blockWhileLoading"
   >
     <slot />
   </button>
@@ -62,7 +70,8 @@ const props = defineProps({
     @include focus-ring;
   }
 
-  &:disabled {
+  &:disabled,
+  &[aria-disabled='true'] {
     opacity: 0.55;
     cursor: not-allowed;
   }
@@ -72,7 +81,7 @@ const props = defineProps({
   color: var(--color-bg);
   background: var(--color-action);
 
-  &:not(:disabled):hover {
+  &:not(:disabled):not([aria-disabled='true']):hover {
     background: var(--color-action-hover);
   }
 }
@@ -82,7 +91,7 @@ const props = defineProps({
   background: var(--color-bg);
   border-color: var(--color-action);
 
-  &:not(:disabled):hover {
+  &:not(:disabled):not([aria-disabled='true']):hover {
     color: var(--color-action-hover);
     border-color: var(--color-action-hover);
   }
@@ -92,7 +101,7 @@ const props = defineProps({
   color: var(--color-action);
   background: transparent;
 
-  &:not(:disabled):hover {
+  &:not(:disabled):not([aria-disabled='true']):hover {
     color: var(--color-action-hover);
   }
 }
