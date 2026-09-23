@@ -101,7 +101,10 @@
     {
       "step": 12,
       "name": "login-scrap",
-      "status": "pending"
+      "status": "completed",
+      "summary": "LoginView에 내부 절대경로만 허용하는 safeRedirect와 입력·실패 처리를 구현하고, ScrapView는 진입 시 ID 목록을 한 번 조회한 뒤 computed로 현재 스크랩만 즉시 필터링하며 빈 상태와 공고 링크를 제공했다.",
+      "started_at": "2026-09-23T20:21:42+0900",
+      "completed_at": "2026-09-23T20:27:09+0900"
     },
     {
       "step": 13,
