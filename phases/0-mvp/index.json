@@ -93,7 +93,10 @@
     {
       "step": 11,
       "name": "detail-apply",
-      "status": "pending"
+      "status": "completed",
+      "summary": "JobDetailView에 급구 제목·회사·급여·지역·근무요일/시간·고용형태·업직종·등록일·상세 설명과 history back 우선 목록 복귀를 구현하고, redirect=/jobs/:id?apply=1 로그인 복귀 후 지원 모달 자동 열기, 이름 필수·01 시작 10~11자리 연락처·오늘 이후 시작일 검증과 첫 오류/완료 메시지 포커스, 닫을 때 지원 버튼 DOM 포커스 복귀를 연결했다.",
+      "started_at": "2026-09-23T20:11:02+0900",
+      "completed_at": "2026-09-23T20:21:40+0900"
     },
     {
       "step": 12,
